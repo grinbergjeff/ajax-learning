@@ -8,10 +8,15 @@ $(function(){
     });
   });
 })
-});
 function getRequest(term) {
-	$.getJSON('http://www.omdbapi.com/?s=' + searchTerm + '&r=json', function(data){
+	var params = {
+		s: term,
+		r: 'json'
+	};
+	url = 'http://www.omdbapi.com/?s=';
+	$.getJSON(url, params, function(data){
       showResults(data.Search);
+})
 };
 function showResults(results) {
 	var html = '';
