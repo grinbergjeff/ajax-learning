@@ -22,8 +22,8 @@ function getRequest(term) {
 function showResults(results) {
 	var html = '';
 	$.each(results, function(index, value) {
-			html += '<p>' + value.Title + '</p>';
-			console.log(value.Title);
+			html += <img src='item.snippet.thumbnails.medium.url'>;
+			console.log(item.snippet.thumbnails.medium.url);
 		})
 	$('#search-results').html(html);
 };
