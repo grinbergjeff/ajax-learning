@@ -10,10 +10,11 @@ $(function(){
 })
 function getRequest(term) {
 	var params = {
-		s: term,
-		r: 'json'
+		part: 'snippet',
+		key: 'AIzaSyB2BX7jkZk-XfRlNMZHVsNCWlEdaASsPBY',
+		q: term
 	};
-	url = 'http://www.omdbapi.com/?s=';
+	url = 'https://www.googleapis.com/youtube/v3/search';
 	$.getJSON(url, params, function(data){
       showResults(data.Search);
 })
