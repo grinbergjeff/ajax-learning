@@ -22,7 +22,7 @@ function getRequest(term) {
 function showResults(results) {
 	var html = '';
 	$.each(results, function(index, value) {
-			html += <img src='item.snippet.thumbnails.medium.url'>;
+			html += "<img src='item.snippet.thumbnails.medium.url'>";
 			console.log(item.snippet.thumbnails.medium.url);
 		})
 	$('#search-results').html(html);
